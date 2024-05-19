@@ -1,17 +1,50 @@
 /* Target tables and their elements */
 table {
-    background-color: #222; /* Dark background for the table */
-    color: #ddd; /* Light text color for readability */
-  }
-  
-  table th,
-  table td {
-    border: 1px solid #444; /* Border around cells */
-    padding: 5px 10px; /* Padding for content within cells */
-  }
-  
-  table thead th {
-    background-color: #333; /* Slightly darker background for headers */
-    color: #eee; /* Lighter text color for headers */
-  }
-  
+  background-color: #222; /* Dark background for the table */
+  color: #ddd; /* Light text color for readability */
+  width: 100%; /* Make table full width */
+  border-collapse: collapse; /* Ensure no space between cells */
+}
+
+th,
+td {
+  padding: 10px; /* Padding for table cells */
+  text-align: center; /* Center align text */
+  border: 1px solid #444; /* Border color */
+}
+
+th {
+  background-color: #333; /* Slightly darker background for header cells */
+}
+
+tr:nth-child(even) {
+  background-color: #282828; /* Alternate row color for better readability */
+}
+
+/* General body and content styling */
+body {
+  background-color: #111; /* Dark background for the page */
+  color: #ddd; /* Light text color */
+  font-family: Arial, sans-serif; /* Font family */
+}
+
+.bckground {
+  background-color: #111; /* Dark background for the body */
+}
+
+.container-fluid {
+  padding: 20px; /* Padding around the container */
+}
+
+.text-uppercase {
+  text-transform: uppercase; /* Uppercase text */
+}
+
+a {
+  color: #1e90ff; /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
